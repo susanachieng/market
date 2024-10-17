@@ -22,8 +22,17 @@ ul {
   max-width: 100%;
   margin: auto;
 }
+
 .container .main-menu {
   align-items: end;
+}
+.main-menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+.main-menu li {
+  list-style: none;
 }
 .main-nav {
   display: flex;
@@ -132,6 +141,9 @@ ul {
 .contact-info {
   flex: 1;
   margin-right: 20px;
+}
+.contact-info p {
+  margin-bottom: 30px;
 }
 .contents h3 {
   color: #001f52;
