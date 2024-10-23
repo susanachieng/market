@@ -1,3 +1,12 @@
+var navLinks = document.getElementById("navLinks");
+
+function showMenu() {
+  navLinks.style.right = "0";
+}
+function hideMenu() {
+  navLinks.style.right = "-200px";
+}
+
 document.addEventListener("DOMContentLoaded", function () {
   // Smooth Scrolling
   document.querySelectorAll(".main-menu a").forEach((anchor) => {
