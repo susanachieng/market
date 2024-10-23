@@ -1,11 +1,19 @@
-var navLinks = document.getElementById("navLinks");
+document.addEventListener("DOMContentLoaded", () => {
+  const menu = document.querySelector(".main-menu");
+  const menuToggle = document.querySelector(".fa-bars");
 
-function showMenu() {
-  navLinks.style.right = "0";
-}
-function hideMenu() {
-  navLinks.style.right = "-200px";
-}
+  // Toggle Menu for Mobile View
+  menuToggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+  });
+
+  // Optional: Close menu when a link is clicked
+  document.querySelectorAll(".main-menu li a").forEach((link) => {
+    link.addEventListener("click", () => {
+      menu.classList.remove("active");
+    });
+  });
+});
 
 document.addEventListener("DOMContentLoaded", function () {
   // Smooth Scrolling
