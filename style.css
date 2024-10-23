@@ -64,6 +64,9 @@ ul {
 .main-nav ul .main-menu {
   flex: 1;
 }
+.nav-links .fa-solid {
+  display: none;
+}
 
 .showcase {
   height: 100vh;
@@ -200,6 +203,7 @@ form.count textarea {
 .social-icons a {
   text-decoration: none;
 }
+
 @media (max-width: 700px) {
   .text-box h1 {
     font-size: 20px;
