@@ -65,55 +65,6 @@ ul {
   flex: 1;
 }
 
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-  .main-menu {
-    flex-direction: column;
-    display: none;
-  }
-
-  .main-menu.active {
-    display: flex;
-  }
-
-  .fa-bars {
-    display: block;
-    cursor: pointer;
-  }
-
-  .showcase h1 {
-    font-size: 1.5em;
-  }
-
-  .home-card div {
-    margin-bottom: 20px;
-  }
-
-  .info .contact-info p {
-    margin-bottom: 20px;
-  }
-
-  .search-form {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .search-input {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-}
-
-@media (max-width: 480px) {
-  .showcase h1 {
-    font-size: 1.2em;
-  }
-
-  .main-nav h2 {
-    font-size: 1.2em;
-  }
-}
-
 .showcase {
   height: 100vh;
   width: 100%;
@@ -131,7 +82,7 @@ ul {
   color: white;
   background-color: white;
 }
-.code #About {
+.code .About {
   font-size: medium;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
@@ -140,10 +91,10 @@ ul {
 .code h1 {
   color: #001f52;
 }
-.code #More h1 {
+.code .More h1 {
   color: #001f52;
 }
-.code #More .get {
+.code .More .get {
   color: white;
   width: 150px;
   height: 60px;
@@ -227,12 +178,12 @@ form.count {
 form.count input[type="text"],
 form.count input[type="email"],
 form.count textarea {
-  width: 100%;
+  width: 50%;
   padding: 10px;
   margin-bottom: 10px;
   font-size: 16px;
 }
-.foot #Contact {
+.foot .Contact {
   height: 25px;
 }
 .social-icons {
@@ -248,4 +199,52 @@ form.count textarea {
 }
 .social-icons a {
   text-decoration: none;
+}
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .main-menu {
+    flex-direction: column;
+    display: none;
+  }
+
+  .main-menu.active {
+    display: flex;
+  }
+
+  .fa-bars {
+    display: block;
+    cursor: pointer;
+  }
+
+  .showcase h1 {
+    font-size: 1.5em;
+  }
+
+  .home-card div {
+    margin-bottom: 20px;
+  }
+
+  .info .contact-info p {
+    margin-bottom: 20px;
+  }
+
+  .search-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .showcase h1 {
+    font-size: 1.2em;
+  }
+
+  .main-nav h2 {
+    font-size: 1.2em;
+  }
 }
